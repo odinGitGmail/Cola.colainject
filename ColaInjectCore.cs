@@ -4,7 +4,7 @@ using Cola.ColaMiddleware.ColaMiddle;
 using Cola.ColaMiddleware.ColaSwagger;
 using Cola.ColaMiddleware.ColaVersioning;
 using Cola.ColaWebApi;
-using Cola.Core.ColaException;
+using Cola.Core.ColaEx;
 using Cola.Core.ColaLog;
 using Cola.Core.ColaSnowFlake;
 using Cola.SystemBuilder;
@@ -15,7 +15,7 @@ namespace Cola.ColaInject;
 
 public static class ColaInjectCore
 {
-    public static IServiceCollection AddColaInjectCore(this IServiceCollection services,
+    public static IServiceCollection AddColaCore(this IServiceCollection services,
         IConfiguration configuration)
     {
         // 异常注入
